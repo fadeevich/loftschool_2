@@ -11,9 +11,8 @@
 	<link rel="stylesheet" href="font/font.css">
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-
 	<link rel="stylesheet" href="css/content_lines.css">
-
+	<link rel="stylesheet" href="css/content_grid.css">
 	<script src="bower/jquery/dist/jquery.min.js"></script>
 	<script src="bower/modernizr/modernizr.js"></script>
 </head>
@@ -21,7 +20,7 @@
 	<div class="wrapper">
 	<!-- хедер -->
 		<header class="header">
-			<div class="header__content clearfix">
+			<div class="header__container clearfix">
 				<a href="#" class="header__logo">
 					<img src="img/header-logo.png" height="57" width="199" alt="header-logo">
 				</a>
@@ -71,12 +70,10 @@
 				</div>
 				<div class="pagination__right">
 					<div class="pagination__select">
-						<form action="#" method="POST">
-			    			<select name="show" size="1">
-			        			<option value="grid">Сеткой</option>
-			        			<option selected class="selected" value="lines">Линиями</option>			
-			    		</select>
-			    		</form>
+			    	<select name="show" size="1">
+			        <option value="grid">Сеткой</option>
+			        <option selected class="selected" value="lines">Линиями</option>			
+			    	</select>
 			    	<a class="select-button"></a>
 					</div>
 					<div class="pagination__pages">
@@ -122,7 +119,7 @@
 								<img src="img/apple-display.jpg" alt="Thunderbolt" class="content__item__img" width="141" height="110">
 							</div>
 							<div class="content__item__descr">
-								<p class="content__item__name">Apple Thunderbolt Display 27"</p>
+								<p class="content__item__title">Apple Thunderbolt Display 27"</p>
 								<p class="content__item__text">Артикул: 42787825, Опция: включена, Цвет: серебристый, Размер: 1280*1245*90, Вес: 9 кг</p>
 							</div>
 						</a>
@@ -133,7 +130,7 @@
 								<img src="img/apple-imac.jpg" alt="iMac" class="content__item__img" width="84" height="121">
 							</div>
 							<div class="content__item__descr">
-								<p class="content__item__name">Apple iMac 27"</p>
+								<p class="content__item__title">Apple iMac 27"</p>
 								<p class="content__item__text">Артикул: 42787825, Опция: включена, Цвет: серебристый, Размер: 1280*1245*90, Вес: 9 кг</p>
 							</div>
 						</a>
@@ -144,7 +141,7 @@
 								<img src="img/iphone-5s.jpg" alt="iPhone" class="content__item__img" width="105" height="97">
 							</div>
 							<div class="content__item__descr">
-								<p class="content__item__name">iPhone 5s Gold</p>
+								<p class="content__item__title">iPhone 5s Gold</p>
 								<p class="content__item__text">Артикул: 42787825, Опция: включена, Цвет: серебристый, Размер: 1280*1245*90, Вес: 9 кг</p>
 							</div>
 						</a>
@@ -155,7 +152,7 @@
 								<img src="img/ipad.jpg" alt="iPad" class="content__item__img" width="113" height="116">
 							</div>
 							<div class="content__item__descr">
-								<p class="content__item__name">iPad Air Wi-Fi + Cellular 128GB - Silver</p>
+								<p class="content__item__title">iPad Air Wi-Fi + Cellular 128GB - Silver</p>
 								<p class="content__item__text">Артикул: 42787825, Опция: включена, Цвет: серебристый, Размер: 1280*1245*90, Вес: 9 кг</p>
 							</div>
 						</a>
@@ -166,7 +163,7 @@
 								<img src="img/ipod.jpg" alt="iPod" class="content__item__img" width="114" height="103">
 							</div>
 							<div class="content__item__descr">
-								<p class="content__item__name">Apple iPod nano 7G 16 ГБ Blue</p>
+								<p class="content__item__title">Apple iPod nano 7G 16 ГБ Blue</p>
 								<p class="content__item__text">Артикул: 42787825, Опция: включена, Цвет: серебристый, Размер: 1280*1245*90, Вес: 9 кг</p>
 							</div>
 						</a>
@@ -177,8 +174,202 @@
 								<img src="img/apple-router.jpg" alt="AirPort" class="content__item__img" width="120" height="54">
 							</div>
 							<div class="content__item__descr">
-								<p class="content__item__name">Роутер Wi-Fi Apple AirPort Extreme Base Station</p>
+								<p class="content__item__title">Роутер Wi-Fi Apple AirPort Extreme Base Station</p>
 								<p class="content__item__text">Артикул: 42787825, Опция: включена, Цвет: серебристый, Размер: 1280*1245*90, Вес: 9 кг</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="content__list-grid">
+					<li class="content__item">
+						<a href="" class="content__item__link">
+							<div class="img-wrapper">
+								<img src="img/apple-display.jpg" alt="Thunderbolt" class="content__item__img" width="141" height="110">
+							</div>
+							<div class="content__item__descr">
+								<p class="content__item__title">Apple Thunderbolt Display 27"</p>
+								<ul class="content__item__text">
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Артикул</div>
+										<div class="content__item__text-content">42787825</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Опция</div>
+										<div class="content__item__text-content">включена</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Цвет</div>
+										<div class="content__item__text-content">серебристый</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Размер</div>
+										<div class="content__item__text-content">1280*1245*90</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Вес</div>
+										<div class="content__item__text-content">9 кг</div>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="content__item">
+						<a href="" class="content__item__link">
+							<div class="img-wrapper">
+								<img src="img/apple-imac.jpg" alt="iMac" class="content__item__img" width="84" height="121">
+							</div>
+							<div class="content__item__descr">
+								<p class="content__item__title">Apple iMac 27"</p>
+								<ul class="content__item__text">
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Артикул</div>
+										<div class="content__item__text-content">42787825</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Опция</div>
+										<div class="content__item__text-content">включена</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Цвет</div>
+										<div class="content__item__text-content">серебристый</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Размер</div>
+										<div class="content__item__text-content">1280*1245*90</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Вес</div>
+										<div class="content__item__text-content">9 кг</div>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="content__item">
+						<a href="" class="content__item__link">
+							<div class="img-wrapper">
+								<img src="img/iphone-5s.jpg" alt="iPhone" class="content__item__img" width="105" height="97">
+							</div>
+							<div class="content__item__descr">
+								<p class="content__item__title">iPhone 5s Gold</p>
+								<ul class="content__item__text">
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Артикул</div>
+										<div class="content__item__text-content">42787825</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Опция</div>
+										<div class="content__item__text-content">включена</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Цвет</div>
+										<div class="content__item__text-content">серебристый</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Размер</div>
+										<div class="content__item__text-content">1280*1245*90</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Вес</div>
+										<div class="content__item__text-content">9 кг</div>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="content__item">
+						<a href="" class="content__item__link">
+							<div class="img-wrapper">
+								<img src="img/ipad.jpg" alt="iPad" class="content__item__img" width="113" height="116">
+							</div>
+							<div class="content__item__descr">
+								<p class="content__item__title">iPad Air Wi-Fi + Cellular 128GB - Silver</p>
+								<ul class="content__item__text">
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Артикул</div>
+										<div class="content__item__text-content">42787825</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Опция</div>
+										<div class="content__item__text-content">включена</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Цвет</div>
+										<div class="content__item__text-content">серебристый</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Размер</div>
+										<div class="content__item__text-content">1280*1245*90</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Вес</div>
+										<div class="content__item__text-content">9 кг</div>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="content__item">
+						<a href="" class="content__item__link">
+							<div class="img-wrapper">
+								<img src="img/ipod.jpg" alt="iPod" class="content__item__img" width="114" height="103">
+							</div>
+							<div class="content__item__descr">
+								<p class="content__item__title">Apple iPod nano 7G 16 ГБ Blue</p>
+								<ul class="content__item__text">
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Артикул</div>
+										<div class="content__item__text-content">42787825</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Опция</div>
+										<div class="content__item__text-content">включена</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Цвет</div>
+										<div class="content__item__text-content">серебристый</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Размер</div>
+										<div class="content__item__text-content">1280*1245*90</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Вес</div>
+										<div class="content__item__text-content">9 кг</div>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="content__item">
+						<a href="" class="content__item__link">
+							<div class="img-wrapper">
+								<img src="img/apple-router.jpg" alt="AirPort" class="content__item__img" width="120" height="54">
+							</div>
+							<div class="content__item__descr">
+								<p class="content__item__title">Роутер Wi-Fi Apple AirPort Extreme Base Station</p>
+								<ul class="content__item__text">
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Артикул</div>
+										<div class="content__item__text-content">42787825</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Опция</div>
+										<div class="content__item__text-content">включена</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Цвет</div>
+										<div class="content__item__text-content">серебристый</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Размер</div>
+										<div class="content__item__text-content">1280*1245*90</div>
+									</li>
+									<li class="content__item__text-row clearfix">
+										<div class="content__item__text-title">Вес</div>
+										<div class="content__item__text-content">9 кг</div>
+									</li>
+								</ul>
 							</div>
 						</a>
 					</li>
@@ -189,11 +380,48 @@
 					<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
 				</div>
 			</main>
+			<div class="to-top" id="to-top">Наверх</div>
 		</div>
 	</div>
 	<footer class="footer">
-		<div class="footer__content">
-			
+		<div class="footer__container">
+			<a href="#" class="footer__logo">
+				<img src="img/footer-logo.png" height="39" width="139" alt="">
+			</a>
+			<div class="footer__content">
+				<ul class="footer__content-list">
+					<p class="footer__content-title">О магазине</p>
+					<li class="footer__content-item"><a href="" class="footer__content-link">О нас</a></li>
+					<li class="footer__content-item"><a href="" class="footer__content-link">Наши цены</a></li>
+					<li class="footer__content-item"><a href="" class="footer__content-link">Наши скидки</a></li>
+					<li class="footer__content-item"><a href="" class="footer__content-link">Акции</a></li>
+				</ul>
+				<ul class="footer__content-list">
+					<p class="footer__content-title">Каталог</p>
+					<li class="footer__content-item"><a href="" class="footer__content-link">Смартфоны</a></li>
+					<li class="footer__content-item"><a href="" class="footer__content-link">Планшеты</a></li>
+					<li class="footer__content-item"><a href="" class="footer__content-link">Компьютеры</a></li>
+					<li class="footer__content-item"><a href="" class="footer__content-link">Аксессуары</a></li>
+				</ul>
+				<ul class="footer__content-list">
+					<p class="footer__content-title">Контакты</p>
+					<li class="footer__content-item"><a href="" class="footer__content-link">Телефоны</a></li>
+					<li class="footer__content-item"><a href="" class="footer__content-link">Адреса</a></li>
+					<li class="footer__content-item"><a href="" class="footer__content-link">Карта проезда</a></li>
+					<li class="footer__content-item"><a href="" class="footer__content-link">Обратная связь</a></li>
+				</ul>
+			</div>
+			<div class="footer__links">
+				<div class="app__links">
+					<a href="" class="app__links-item"><img src="img/appstore-logo.png" height="32" width="90" alt=""></a>
+					<a href="" class="app__links-item"><img src="img/googleplay-logo.png" height="32" width="90" alt=""></a>
+				</div>
+				<div class="social__links">
+					<a href="" class="social__links-item social__links-item-vk"></a>
+					<a href="" class="social__links-item social__links-item-fb"></a>
+					<a href="" class="social__links-item social__links-item-tw"></a>
+				</div>
+			</div>
 		</div>
 	</footer>
 </body>
