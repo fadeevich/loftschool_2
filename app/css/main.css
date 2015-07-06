@@ -292,10 +292,10 @@ option.selected {
   float: left;
 }
 .product__list {
-  background-color: #f7f7f7;
   padding: 0;
   margin: 0;
   list-style: none;
+  background-color: #f7f7f7;
 }
 .inner-list {
   display: none;
@@ -315,25 +315,25 @@ option.selected {
   background-image: url(../img/marker.png);
   background-repeat: no-repeat;
 }
-.product__link {
+.product__link, .product__group {
   padding-left: 20px;
   position: relative;
   font-size: 15px;
   line-height: 28px;
-  min-height: 28px;
   display: block;
   text-decoration: none;
   color: #5c7b98;
   border-bottom: 1px solid #dae1eb;
   border-top: 1px solid #fff;
+  min-height: 28px;
 }
 .product__list .product__item:last-child .product__link{
   border-bottom: none;
 }
-.product__link:hover {
+.product__link:hover, .product__group:hover {
   background-color: #dce6f0;
 }
-.product-menu .product__link.active {
+.product-menu .product__link.active, .product__group.active {
   background-color: #00b9fe;
   color: #fff;
 }

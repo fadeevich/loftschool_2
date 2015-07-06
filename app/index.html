@@ -70,9 +70,9 @@
 				</div>
 				<div class="pagination__right">
 					<div class="pagination__select">
-			    	<select name="show" size="1">
+			    	<select size="1" id="content-show">
 			        <option value="grid">Сеткой</option>
-			        <option selected class="selected" value="lines">Линиями</option>			
+			        <option selected value="lines">Линиями</option>			
 			    	</select>
 			    	<a class="select-button"></a>
 					</div>
@@ -92,7 +92,7 @@
 	<!-- навигация по продуктам -->
 			<aside class="product-menu">
 				<ul class="product__list">
-					<li class="product__item"><a href="" class="product__link active">iPhone</a>
+					<li class="product__item"><a href="" class="product__group">iPhone</a>
 						<ul class="inner-list">
 							<li class="product__item"><a href="" class="product__link">iPhone 4s</a></li>
 							<li class="product__item"><a href="" class="product__link">iPhone 5</a></li>
@@ -101,11 +101,51 @@
 							<li class="product__item"><a href="" class="product__link">iPhone 6 plus</a></li>
 						</ul>
 					</li>
-					<li class="product__item"><a href="" class="product__link">iPad</a></li>
-					<li class="product__item"><a href="" class="product__link">iMac</a></li>
-					<li class="product__item"><a href="" class="product__link">Macbook</a></li>
-					<li class="product__item"><a href="" class="product__link">iPod</a></li>
-					<li class="product__item"><a href="" class="product__link">Другое</a></li>
+					<li class="product__item"><a href="" class="product__group">iPad</a>
+						<ul class="inner-list">
+							<li class="product__item"><a href="" class="product__link">iPhone 4s</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 5</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 5s с эксклюзивным дизайном</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 6</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 6 plus</a></li>
+						</ul>
+					</li>
+					<li class="product__item"><a href="" class="product__group">iMac</a>
+						<ul class="inner-list">
+							<li class="product__item"><a href="" class="product__link">iPhone 4s</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 5</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 5s с эксклюзивным дизайном</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 6</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 6 plus</a></li>
+						</ul>
+					</li>
+					<li class="product__item"><a href="" class="product__group">Macbook</a>
+						<ul class="inner-list">
+							<li class="product__item"><a href="" class="product__link">iPhone 4s</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 5</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 5s с эксклюзивным дизайном</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 6</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 6 plus</a></li>
+						</ul>
+					</li>
+					<li class="product__item"><a href="" class="product__group">iPod</a>
+						<ul class="inner-list">
+							<li class="product__item"><a href="" class="product__link">iPhone 4s</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 5</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 5s с эксклюзивным дизайном</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 6</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 6 plus</a></li>
+						</ul>
+					</li>
+					<li class="product__item"><a href="" class="product__group">Другое</a>
+						<ul class="inner-list">
+							<li class="product__item"><a href="" class="product__link">iPhone 4s</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 5</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 5s с эксклюзивным дизайном</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 6</a></li>
+							<li class="product__item"><a href="" class="product__link">iPhone 6 plus</a></li>
+						</ul>
+					</li>
 				</ul>
 			</aside>
 	<!-- навигация по продуктам - конец -->
@@ -424,5 +464,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/main.js"></script>
 </body>
 </html>
