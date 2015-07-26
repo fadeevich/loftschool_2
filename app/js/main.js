@@ -3,18 +3,26 @@ $(document).ready(function() {
 /*---------------ACCORDEON--------------*/
 
 	$('.product__group').on('click', function(e){
-	   e.preventDefault();
+	  e.preventDefault();
 
-			var _this = $(this),
-					item = _this.closest('.product__item'),
-					items = _this.closest('.product__list'),
-					content = item.find('.inner-list'),
-					duration = 300;
+		var _this = $(this),
+				item = _this.closest('.product__item'),
+				list = _this.closest('.product__list'),
+				items = list.find('.product__group'),
+				content = item.find('.product__inner-list'),
+				otherContent = list.find('.product__inner-list'),
+				duration = 300;
 
-			items.find('.product__group').removeClass('active');
-			item.find('.product__group').addClass('active');
-			items.find('.inner-list').slideUp(duration);
-			content.stop(true, true).slideDown(duration);;
+		if (!_this.hasClass('active')) {
+			items.removeClass('active');
+			_this.addClass('active');
+			otherContent.stop(true, true).slideUp(duration);
+			content.stop(true, true).slideDown(duration);
+		} else {
+			content.stop(true, true).slideUp(duration);
+			_this.stop(true, true).removeClass('active');
+		}
+
 	});
 
 /* ---------------UP BUTTON--------------*/

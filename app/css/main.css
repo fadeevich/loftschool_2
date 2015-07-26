@@ -297,15 +297,15 @@ option.selected {
   list-style: none;
   background-color: #f7f7f7;
 }
-.inner-list {
+.product__inner-list {
   display: none;
   padding: 0;
   list-style: none;
 }
-.inner-list .product__link {
+.product__inner-list .product__link {
   padding-left: 35px;
 }
-.inner-list .product__link:before {
+.product__inner-list .product__link:before {
   position: absolute;
   top: 9px;
   left: 20px;
@@ -333,7 +333,7 @@ option.selected {
 .product__link:hover, .product__group:hover {
   background-color: #dce6f0;
 }
-.product-menu .product__link.active, .product__group.active {
+.product-menu .product__group.active {
   background-color: #00b9fe;
   color: #fff;
 }
